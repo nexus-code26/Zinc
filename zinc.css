@@ -1,0 +1,195 @@
+/* ESTILO CORPORATIVO MINIMALISTA (CIAN / PLATA) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    color: #0f172a;
+    margin: 0;
+    padding: 30px 15px;
+    line-height: 1.6;
+}
+
+.wrapper-zinc {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    border-top: 6px solid #0891b2;
+}
+
+/* CABECERA */
+.header-zinc {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #ecfeff;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #0891b2;
+    margin-bottom: 25px;
+}
+
+.logo-zinc {
+    width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+.tag-proyecto {
+    background: #0891b2;
+    color: white;
+    font-size: 0.75em;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+
+.datos-autor h2 {
+    margin: 5px 0 2px 0;
+    font-size: 1.25em;
+    color: #155e75;
+}
+
+.datos-autor p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #475569;
+}
+
+/* HERO SECTION */
+.hero-zinc {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-zinc h1 {
+    font-size: 2.8em;
+    margin: 0 0 5px 0;
+    color: #0e7490;
+    letter-spacing: 1px;
+}
+
+.badge-zn {
+    font-size: 0.5em;
+    background: #cffafe;
+    color: #0e7490;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid #67e8f9;
+    vertical-align: middle;
+}
+
+.intro-text {
+    margin: 0;
+    color: #64748b;
+    font-size: 1.1em;
+}
+
+/* GRID DE CONTENIDO */
+.content-grid-zinc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card-zinc {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 22px;
+    border-radius: 10px;
+}
+
+.span-full {
+    grid-column: span 2;
+}
+
+.card-zinc h3 {
+    color: #0e7490;
+    margin-top: 0;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 8px;
+}
+
+.img-zinc {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* LISTA */
+.list-zinc {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-zinc li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 0.95em;
+}
+
+.list-zinc li:last-child {
+    border-bottom: none;
+}
+
+.list-zinc strong {
+    color: #334155;
+}
+
+/* FLEXBOX DE USO */
+.flex-uso {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.img-uso {
+    width: 240px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+/* ALERTA */
+.alert-zinc {
+    background: #fff5f5;
+    border: 1px solid #fed7d7;
+    border-left: 5px solid #e53e3e;
+}
+
+.alert-zinc h3 {
+    color: #c53030;
+    border-bottom-color: #fed7d7;
+}
+
+.alert-zinc p {
+    color: #9b2c2c;
+    margin: 0;
+}
+
+/* RESPONSIVE PARA MÓVILES */
+@media (max-width: 768px) {
+    .content-grid-zinc {
+        grid-template-columns: 1fr;
+    }
+    .span-full {
+        grid-column: span 1;
+    }
+    .flex-uso {
+        flex-direction: column;
+    }
+    .img-uso {
+        width: 100%;
+    }
+    .header-zinc {
+        flex-direction: column;
+        text-align: center;
+    }
+}
